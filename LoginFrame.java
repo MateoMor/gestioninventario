@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.border.EmptyBorder;  // Importa EmptyBorder
+import javax.swing.border.EmptyBorder;
 
 public class LoginFrame extends JFrame {
     private UsuarioServicio usuarioServicio;
@@ -28,14 +28,14 @@ public class LoginFrame extends JFrame {
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(6, 3));
 
-        // Añadir padding (margen interno) alrededor del panel
-        panel.setBorder(new EmptyBorder(10, 10, 10, 10)); // top, left, bottom, right
+        
+        panel.setBorder(new EmptyBorder(10, 10, 10, 10)); 
 
         panel.add(labelCorreo);
         panel.add(campoCorreo);
         panel.add(labelPassword);
         panel.add(campoPassword);
-        panel.add(new JLabel());  // Espacio vacío
+        panel.add(new JLabel()); 
         panel.add(botonIngresar);
 
         add(panel);
@@ -48,7 +48,7 @@ public class LoginFrame extends JFrame {
                 String password = campoPassword.getText();
 
                 if (usuarioServicio.validarUsuario(correo, password)) {  
-                    Usuario usuario = usuarioServicio.obtenerUsuarioPorCorreo(correo);
+                    Usuario usuario = UsuarioRepositorio.obtenerUsuarioPorCorreo(correo);
                     JOptionPane.showMessageDialog(null, "Bienvenido " + usuario.getNombre());
 
                     // Mostrar la interfaz principal

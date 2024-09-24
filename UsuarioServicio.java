@@ -1,10 +1,7 @@
 package gestioninventario;
 
 public class UsuarioServicio {
-    // Constructor
     public UsuarioServicio() {
-        // No es necesario inicializar UsuarioRepositorio si no lo usas.
-        
         // Crear un usuario de prueba
         Usuario usuarioPrueba = new Usuario();
         usuarioPrueba.setId(1);
@@ -24,7 +21,5 @@ public class UsuarioServicio {
         return usuario != null && usuario.getPassword().equals(password);
     }
 
-    public Usuario obtenerUsuarioPorCorreo(String correo) {
-        return UsuarioRepositorio.obtenerUsuarioPorCorreo(correo);
-    }
+    
 }

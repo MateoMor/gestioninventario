@@ -14,7 +14,7 @@ public class Usuario {
     private String password;
     private boolean estadoActivo;
 
-    // Constructor vacío
+    
     public Usuario() {
     }
 
