@@ -1,4 +1,4 @@
-package gestioninventario;
+package gestioninventario.model;
 
 
 public class Usuario {

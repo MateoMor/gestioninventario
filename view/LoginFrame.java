@@ -1,10 +1,14 @@
-package gestioninventario;
+package gestioninventario.view;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.border.EmptyBorder;
+
+import gestioninventario.model.Usuario;
+import gestioninventario.repository.UsuarioRepositorio;
+import gestioninventario.service.UsuarioServicio;
 
 public class LoginFrame extends JFrame {
     private UsuarioServicio usuarioServicio;

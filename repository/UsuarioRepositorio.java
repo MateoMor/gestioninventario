@@ -1,8 +1,10 @@
-package gestioninventario;
+package gestioninventario.repository;
 
 
 import java.util.ArrayList;
 import java.util.List;
+
+import gestioninventario.model.Usuario;
 
 public class UsuarioRepositorio {
     // ArrayList estático para almacenar usuarios

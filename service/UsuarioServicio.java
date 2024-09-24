@@ -1,4 +1,7 @@
-package gestioninventario;
+package gestioninventario.service;
+
+import gestioninventario.model.Usuario;
+import gestioninventario.repository.UsuarioRepositorio;
 
 public class UsuarioServicio {
     public UsuarioServicio() {

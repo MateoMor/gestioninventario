@@ -1,6 +1,9 @@
-package gestioninventario;
+package gestioninventario.view;
 
 import javax.swing.*;
+
+import gestioninventario.model.Usuario;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
